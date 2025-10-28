@@ -670,4 +670,48 @@ source venv/bin/activate
 venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
+# ❤️ FreeLove — Site de rencontres locales en Alsace
 
+**FreeLove** est une plateforme de rencontres **gratuite, locale et sécurisée**, conçue pour favoriser des connexions authentiques entre les habitants d’Alsace.  
+Aucune photo avant le *match* : les profils sont basés sur les **points communs** et la compatibilité avant tout.
+
+---
+
+## 🚀 Fonctionnalités principales
+
+- 🔐 **Inscription / Connexion sécurisée** (mots de passe chiffrés avec bcrypt)
+- 🧑‍🤝‍🧑 **Profils complets** (pseudo, bio, ville, centres d’intérêt)
+- 🌍 **Recherche locale** : rencontrez des utilisateurs proches (Alsace)
+- 💬 **Messagerie privée** entre profils qui matchent
+- ❤️ **Système de "likes" et compatibilité**
+- 🎯 **Match automatique** dès 10 points communs
+- 🕵️‍♀️ **Anonymat avant le match** (photo cachée jusqu’à compatibilité)
+- ⚙️ **Sécurité** : CSRF, rate-limiting, validation des entrées, HTTPS local
+
+---
+
+## 🏗️ Stack technique
+
+- **Backend :** Flask (Python)
+- **Base de données :** SQLite (local) → PostgreSQL possible en ligne
+- **Frontend :** HTML + Bootstrap 5 (Jinja2 templates)
+- **Auth :** Flask-Login + bcrypt
+- **Formulaires :** Flask-WTF (CSRF inclus)
+- **Rate limiting :** Flask-Limiter
+- **Langue :** Français 🇫🇷
+
+---
+
+## 📦 Installation locale
+
+### 1️⃣ Cloner le projet
+
+```bash
+git clone https://github.com/votre-utilisateur/freelove.git
+cd freelove
+python -m venv venv
+source venv/bin/activate   # mac/linux
+venv\Scripts\activate      # windows
+pip install -r requirements.txt
+python -c "from models import init_db; init_db()"
+python app.py
