@@ -724,3 +724,6 @@ freelove/
 ├── static/               # CSS / JS / images
 ├── uploads/              # Photos de profils (stockage local)
 └── README.md             # Ce fichier
+---
+
+Souhaites-tu que je te crée le **fichier `README.md` téléchargeable** (avec le bon encodage et format GitHub), ou veux-tu que je t’ajoute aussi un **logo + favicon FreeLove** à intégrer dans le site ?
