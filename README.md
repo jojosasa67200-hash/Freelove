@@ -715,3 +715,12 @@ venv\Scripts\activate      # windows
 pip install -r requirements.txt
 python -c "from models import init_db; init_db()"
 python app.py
+freelove/
+├── app.py                # Application principale Flask
+├── models.py             # Base de données et fonctions utilisateur
+├── forms.py              # Formulaires et validation
+├── requirements.txt      # Dépendances Python
+├── templates/            # Pages HTML Jinja2
+├── static/               # CSS / JS / images
+├── uploads/              # Photos de profils (stockage local)
+└── README.md             # Ce fichier
